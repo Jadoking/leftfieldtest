@@ -7,7 +7,7 @@ I used the django framework for the web framework due to familiarity
 
 This API ingests any list of venues in this format [[x,y],[x,y],[x,y]] where index 0 is home
 
-###There are two end points
+### There are two end points
 
 /venue_list/ POST which takes an array of the format above as a venue list and adds it to the database returns the pk of the venue list
 
@@ -15,11 +15,11 @@ This API ingests any list of venues in this format [[x,y],[x,y],[x,y]] where ind
 
 There are Two models
 
-###VenueList
+### VenueList
 
 venue_list - (nvarchar(200)) a string array intended to be formatted as [[x,y], [x,y]] etc where index 0 is home
 
-###Path
+### Path
 
 path - (nvarchar(250)) a string array that has an optimal path for a set of venues formatted as [[x,y], [x,y]] where index 0 is the start and the last index is the end of the path
 
@@ -29,7 +29,7 @@ venues_id - (foreign key) meant to link the path to list of venues
 
 I used django's built-in ORM and SQLite for speed and simplicity
 
-###The ORM functions being used more or less translate to the following queries
+### The ORM functions being used more or less translate to the following queries
 
 In the insert of the x,y coordinates 
 
